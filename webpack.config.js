@@ -20,7 +20,11 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
         title: 'David Wesst | Official Website',
-        template: path.resolve(__dirname, 'src/index.html')
+        template: path.resolve(__dirname, 'src/index.html'),
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true
+        }
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
