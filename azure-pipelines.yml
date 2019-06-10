@@ -24,7 +24,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
-    customCommand: 'build'
+    customCommand: 'run build'
 
 - task: CopyFiles@2
   inputs:
