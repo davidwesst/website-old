@@ -1,25 +1,11 @@
-import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import React, { Children } from "react"
 
-export default props => {
-    const data = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
-        `
-    )
+// style
+import styles from "./header.module.css"
 
-    return (
-        <header>
-            <h1>{data.site.siteMetadata.title}</h1>
-            <h2>{props.headerText}</h2>
-            <Link to="/">Home</Link>
-            <Link to="/about/">About</Link>
-        </header>
-    )
-}
+export default () => (
+    <header className={styles.header}>
+        <h1>David Wesst</h1>
+        <h2>The Official source for all things Wessty</h2>
+    </header>
+)

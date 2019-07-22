@@ -1,16 +1,25 @@
 :root {
-    --main-bg-color: rgb(250,250,250);
-    --main-fg-color: rgb(25,25,25);
+    --main-light-color: rgb(250,250,250);
+    --main-dark-color: rgb(25,25,25);
 }
 
-html {
-    font-family: 'Open Sans';
+html, body, h1, h2, h3, h4, h5, h6, div, article, section, main {
+    /* reset spacing */
     margin: 0;
     padding: 0;
-    color: var(--main-fg-color);
-    background-color: var(--main-bg-color);
+}
+
+html, body {
+    font-family: 'Open Sans';
+    color: var(--main-dark-color);
+    background-color: var(--main-light-color);
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Raleway';
+}
+
+.siteHeader {
+    color: var(--main-light-color);
+    background-color: var(--main-dark-color);
 }
