@@ -6,7 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `My metadata title changed!`,
+    title: `David Wesst`,
+    subtitle: `Game Developer. Solution Architect. Open Web Enthusiast. Public Speaker. Balancer of Work Life.`
   },
   plugins: [
     {
