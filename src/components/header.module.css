@@ -1,4 +1,18 @@
 .header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100vh;
+
     background-color: var(--main-dark-color);
     color: var(--main-light-color);
+}
+
+.header .content {
+    max-width: 80vw;
+}
+
+.header nav {
+    display: flex;
+    flex-flow: row;
 }

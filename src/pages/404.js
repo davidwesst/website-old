@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 // components
-import Splash from "../components/splash"
+import Header from "../components/header"
 
 export default () => (
-    <Splash>
+    <Header>
         <h1>404</h1>
         <p>Err...that's probably not good. You should probably <Link to="/">head back home.</Link></p>
-    </Splash>
+    </Header>
 )

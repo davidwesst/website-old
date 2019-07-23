@@ -12,10 +12,8 @@ html, body, h1, h2, h3, h4, h5, h6, div, article, section, main {
 
 html, body {
     font-family: 'Open Sans';
-    color: var(--main-light-color);
-    background-color: var(--main-dark-color);
-    height: 100%;
-    width: 100%;
+    color: var(--main-dark-color);
+    background-color: var(--main-light-color);
 }
 
 h1,h2,h3,h4,h5,h6 {

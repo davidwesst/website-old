@@ -1,5 +1,10 @@
 import React from "react"
 
+// components
+import Header from "../components/header"
+
 export default () => (
-    <h1>Talks goes here! (Soon)</h1>
+    <Header>
+        <h1>Talks goes here! (Soon)</h1>
+    </Header>
 )
