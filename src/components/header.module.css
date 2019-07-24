@@ -4,15 +4,25 @@
     justify-content: center;
     height: 100vh;
 
-    background-color: var(--main-dark-color);
-    color: var(--main-light-color);
+    background-color: var(--main-black-color);
+    color: var(--main-white-color);
 }
 
 .header .content {
-    max-width: 80vw;
+    max-width: 90vw;
+}
+
+.header section {
+    margin: 3em 0;
 }
 
 .header nav {
     display: flex;
     flex-flow: row;
+    justify-content: left;
+    margin: 1em;
+}
+
+.header nav a {
+    margin-right: 2em;
 }

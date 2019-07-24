@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: `David Wesst`,
-    subtitle: `Game Developer. Solution Architect. Open Web Enthusiast. Public Speaker. Balancer of Work Life.`
+    subtitle: `The Official Site for all things Wessty`
   },
   plugins: [
     {
