@@ -3,6 +3,7 @@
     flex-flow: column;
     justify-content: center;
     height: 100vh;
+    padding: 0 1em;
 
     background-color: var(--main-black-color);
     color: var(--main-white-color);
@@ -24,5 +25,14 @@
 }
 
 .header nav a {
-    margin-right: 2em;
+    color: var(--main-white-color);
+    text-decoration: underline;
+}
+
+.header nav a:visited {
+    color: var(--main-offwhite-color);
+}
+
+.header nav a:hover {
+    color: var(--main-green-color);
 }

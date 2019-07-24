@@ -21,6 +21,14 @@ html, body {
     background-color: var(--main-white-color);
 }
 
+main {
+    margin: 6em 2em;
+}
+
+main section {
+    margin: 3em 0;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Raleway';
 }
@@ -51,16 +59,20 @@ h6 {
 }
 
 a {
-    color: var(--main-white-color);
+    color: var(--main-black-color);
     text-decoration: underline;
 }
 
 a:visited {
-    color: var(--main-offwhite-color);
+    color: var(--main-black-color);
 }
 
 a:hover {
     color: var(--main-green-color);
+}
+
+nav a {
+    margin-right: 2em;
 }
 
 .lowlight {

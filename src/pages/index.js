@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 
 // components
 import Header from "../components/header"
+import SocialMediaNav from "../components/socialmedianav"
 
 export default ({ data }) => (
     <>
@@ -23,8 +24,11 @@ export default ({ data }) => (
                     <Link to="/about/">About</Link>
                     <Link to="/blog/">Blog</Link>
                     <Link to="/talks/">Talks</Link>
+                    <Link to="/contact/">Contact</Link>
                 </nav>
             </section>
+        </Header>
+        <main>
             <section>
                 <h3>Looking for my video game? Here you go.</h3>
                 <nav>
@@ -33,19 +37,9 @@ export default ({ data }) => (
             </section>
             <section>
                 <h3>I tend to hang out in these digital places.</h3>
-                <nav>
-                    <a href="/">Instagram</a>
-                    <a href="/">Twitter</a>
-                    <a href="/">Twitch</a>
-                    <a href="/">Mixer</a>
-                    <a href="/">Facebook</a>
-                    <a href="/">YouTube</a>
-                    <a href="/">LinkedIn</a>
-                    <a href="/">GitHub</a>
-                    <a href="/">Azure DevOps</a>
-                </nav>
+                <SocialMediaNav />
             </section>
-        </Header>
+        </main>
     </>
 )
 
