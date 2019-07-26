@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 
+import styles from "./socialmedianav.module.css"
+
 function getAnchors (data) {
     return  data.map(link => {
         return (
@@ -27,7 +29,7 @@ export default () => {
 
     // component
     return (
-        <nav>
+        <nav className={styles.links} >
             {getAnchors(data.allSocialJson.nodes)}
         </nav>
     )

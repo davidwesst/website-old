@@ -6,13 +6,18 @@
     --main-green-color: rgb(0, 255, 0);
     --main-pink-color: rgb(255,0,255);
     --main-amber-color: rgb(255,191,0);
+
+    --main-xlrg-font: 2em;
+    --main-lrg-font: 1.5em;
+    --main-med-font: 1em;
+    --main-sml-font: 0.5em;
 }
 
 html, body, h1, h2, h3, h4, h5, h6, div, article, section, main {
     /* reset spacing */
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 16pt;
 }
 
 html, body {
@@ -26,36 +31,23 @@ main {
 }
 
 main section {
-    margin: 3em 0;
+    margin: 1em 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, .emphasis {
     font-family: 'Raleway';
 }
 
 h1 {
-    font-size: 5em;
+    font-size: var(--main-xlrg-font);
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: var(--main-lrg-font);
 }
 
-h3 {
-    font-size: 2em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1em;
-    font-style: italic;
+h3, h4, h5, h6 {
+    font-size: var(--main-med-font);
 }
 
 a {
@@ -71,15 +63,11 @@ a:hover {
     color: var(--main-green-color);
 }
 
-nav a {
-    margin-right: 2em;
+.highlight {
+    color: var(--main-offwhite-color);
 }
 
-.lowlight {
-    color: var(--main-gray-color)
-}
-
-.lowlight .highlight {
+a.highlight:hover {
     color: var(--main-white-color);
 }
 
