@@ -10,6 +10,7 @@ module.exports = {
     subtitle: `The Official Site for all things Wessty`
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
