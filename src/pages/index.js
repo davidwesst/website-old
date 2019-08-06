@@ -19,16 +19,18 @@ export default ({ data }) => (
             </section>
             <section>
                 <h2>
-                    You can download and play my game <a href="https://cocobokostudios.itch.io/vagabond" className="highlight">here</a>.
-                </h2>
-            </section>
-            <section>
-                <h2>
-                    You can find in and around these places:
-                    <SocialMediaNav />
+                    You can download and play #VagabondGame <a href="https://cocobokostudios.itch.io/vagabond" className="highlight">here</a>.
                 </h2>
             </section>
         </Header>
+        <main>
+            <section>
+                <h2>
+                    Here are all my social media links and things:
+                    <SocialMediaNav />
+                </h2>
+            </section>
+        </main>
     </>
 )
 

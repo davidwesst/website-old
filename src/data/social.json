@@ -43,10 +43,5 @@
         "id": "github",
         "display": "GitHub",
         "url": "https://github.com/davidwesst"
-    },
-    {
-        "id": "azuredevops",
-        "display": "Azure Dev Ops",
-        "url": "https://dev.azure.com/davidwesst"
     }
 ]
