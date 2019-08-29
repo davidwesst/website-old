@@ -3,6 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
+      - master
       - gh-actions
 
 jobs:
@@ -22,20 +23,23 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: npm install and build
+    - name: NPM install and build
       run: |
         npm install
         npm run build --if-present
       env:
         CI: true
 
-    - name: azure login
+    - name: Azure Login
       uses: azure/actions/login@master
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: clean file destination
+    - name: Clean File Destination
       run: az storage blob delete-batch -s \$web --account-name ${{ secrets.STORAGE_ACCOUNT }}
     
-    - name: deploy website
+    - name: Deploy Updated Files
       run: az storage blob upload-batch --source ${GITHUB_WORKSPACE}/public --destination \$web --account-name ${{ secrets.STORAGE_ACCOUNT }}
+
+    - name: Purge and Refresh CDN
+      run: az cdn endpoint purge --name ${{ secrets.STORAGE_ACCOUNT }} --profile-name ${{ secrets.CDN_PROFILE_NAME }}  --content-paths /*
