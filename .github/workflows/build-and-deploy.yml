@@ -33,4 +33,6 @@ jobs:
       uses: azure/actions/login@master
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: test login
       run: az self-test
