@@ -42,4 +42,4 @@ jobs:
       run: az storage blob upload-batch --source ${GITHUB_WORKSPACE}/public --destination \$web --account-name ${{ secrets.STORAGE_ACCOUNT }}
 
     - name: Purge and Refresh CDN
-      run: az cdn endpoint purge --name ${{ secrets.STORAGE_ACCOUNT }} --resource-group ${{ secrets.RESOURCE_GROUP }} --profile-name ${{ secrets.CDN_PROFILE_NAME }}  --content-paths /*
+      run: az cdn endpoint purge --name ${{ secrets.STORAGE_ACCOUNT }} --resource-group ${{ secrets.RESOURCE_GROUP }} --profile-name ${{ secrets.CDN_PROFILE_NAME }} --content-paths /**
