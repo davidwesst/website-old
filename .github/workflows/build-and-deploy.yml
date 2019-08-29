@@ -33,6 +33,9 @@ jobs:
       uses: azure/actions/login@master
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: clean file destination
+      run: az storage blob delete-batch -s \$web --account-name ${{ secrets.STORAGE_ACCOUNT }}
     
-    - name: test login
-      run: az self-test
+    - name: deploy website
+      run: az storage blob upload-batch --source ${GITHUB_WORKSPACE}/public --destination \$web --account-name ${{ secrets.STORAGE_ACCOUNT }}
